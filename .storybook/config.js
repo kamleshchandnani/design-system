@@ -7,16 +7,16 @@ import { ModalProvider } from '../src/molecules/Modal';
 
 addParameters({
   options: {
-    theme: themes.dark,
+    theme: themes.light,
   },
 });
 
 addDecorator((Story) => (
   <ThemeProvider theme={theme}>
     <React.Fragment>
-      <ModalProvider>
-        <Story />
-      </ModalProvider>
+      {/* <ModalProvider> */}
+      <Story />
+      {/* </ModalProvider> */}
     </React.Fragment>
   </ThemeProvider>
 ));

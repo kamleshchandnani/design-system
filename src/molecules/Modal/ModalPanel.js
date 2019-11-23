@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { color } from 'styled-system';
 import PropTypes from 'prop-types';
+import { useModalContext } from '../Modal';
 import { IconClose } from '../../atoms/Icon';
 import Position from '../../atoms/Position';
 
@@ -41,7 +42,9 @@ const StyledModalPanel = styled(({ position, ...props }) => <div {...props} />)`
   ${color}
 `;
 
-const ModalPanel = ({ position, onClose, children, ...props }) => {
+const ModalPanel = ({ position, children, ...props }) => {
+  const { onClose } = useModalContext();
+
   return (
     <StyledModalPanel position={position} {...props} bg="white">
       {onClose ? (

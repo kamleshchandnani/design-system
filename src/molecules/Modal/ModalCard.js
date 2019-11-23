@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 import { layout, color } from 'styled-system';
+import { useModalContext } from '../Modal';
 import { IconClose } from '../../atoms/Icon';
 import Position from '../../atoms/Position';
 
@@ -24,7 +25,9 @@ const StyledModalCard = styled(({ width, height, ...props }) => <div {...props} 
   ${layout}
 `;
 
-const ModalCard = ({ width, height, onClose, children, ...props }) => {
+const ModalCard = ({ width, height, children, ...props }) => {
+  const { onClose } = useModalContext();
+
   return (
     <StyledModalCard width={width} height={height} {...props} bg="white">
       {onClose ? (
