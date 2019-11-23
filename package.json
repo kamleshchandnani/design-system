@@ -51,9 +51,8 @@
     "commit": "npx git-cz",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o public",
-    "build:components": "rollup -c",
-    "prepublish": "npm run build:components && node ./src/utils/generatePublishFiles.js",
-    "publish": "semantic-release",
+    "build:components": "rollup -c && node ./src/utils/generatePublishFiles.js",
+    "publish": "npm run build:components && semantic-release",
     "build": "npm run build:storybook"
   },
   "config": {
