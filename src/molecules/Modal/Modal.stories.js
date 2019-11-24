@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
-import Modal from './Modal';
+import Modal from '../Modal';
 import Flex from '../../atoms/Flex';
 import Space from '../../atoms/Space';
 import Text from '../../atoms/Text';
