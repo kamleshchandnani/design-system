@@ -56,7 +56,7 @@
     "prepublish": "npm run build:components && node ./src/utils/generatePublishFiles.js",
     "publish": "semantic-release",
     "build": "npm run build:storybook",
-    "chromatic": "CHROMATIC_APP_CODE=gx0k8mh119 chromatic"
+    "chromatic": "chromatic"
   },
   "config": {
     "commitizen": {
