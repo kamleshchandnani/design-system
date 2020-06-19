@@ -62,5 +62,17 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+  "files": [
+    "cjs/**/*",
+    "Flex.js",
+    "Icon.js",
+    "Position.js",
+    "Size.js",
+    "Space.js",
+    "Text.js",
+    "View.js",
+    "Modal.js",
+    "theme.js"
+  ]
 }
