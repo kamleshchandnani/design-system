@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select } from '@storybook/addon-knobs/react';
-import Modal from '../Modal';
+import { ModalProvider } from '../Modal';
 import Flex from '../../atoms/Flex';
 import Space from '../../atoms/Space';
 import Text from '../../atoms/Text';
@@ -9,7 +9,7 @@ import { theme } from '../../tokens';
 
 storiesOf('Modal', module)
   .addParameters({
-    component: Modal,
+    component: ModalProvider,
   })
   .addDecorator(withKnobs)
   .add('Simple Modal', () => {
@@ -20,4 +20,5 @@ storiesOf('Modal', module)
      * 3. If I have to open/close specific Modal in the whole tree it becomes clumsy because again Controlled Modal
      * 4. If I have to open a Modal from a function which doesn't render JSX then I cannot do it with this implementation
      */
+    return <div>Modal demo</div>;
   });
