@@ -1,7 +1,7 @@
 # Modal
 This is the implementation of `Modal` based on the requirements mentioned [here](../../../REQUIREMENTS.md)
 ## Requirements
-The requirements in a nutshell(obviously you have defined it so you already know). Just to maintain context here:
+The requirements in a nutshell. Just to maintain context here:
 
 1. Modal can be opened or closed from anywhere in the component tree.
 2. We should be able to open multiple modals stacking over each other.
