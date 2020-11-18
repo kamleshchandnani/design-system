@@ -40,7 +40,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-svg": "^2.0.0",
-    "semantic-release": "^15.13.24",
+    "semantic-release": "^17.2.3",
     "storybook-chromatic": "^3.5.0"
   },
   "peerDependencies": {
